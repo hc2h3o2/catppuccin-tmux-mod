@@ -57,7 +57,7 @@ setw window-status-style "fg=${thm_fg},bg=${thm_bg},none"
 # --------=== Statusline
 
 set status-left '#{prefix_highlight}'
-set status-right "#[fg=$thm_yellow,bg=$thm_bg,nobold,nounderscore,noitalics]#[fg=$thm_bg,bg=$thm_yellow,nobold,nounderscore,noitalics] #[fg=$thm_fg,bg=$thm_black] #W #{?client_prefix,#[fg=$thm_red],#[fg=$thm_green]}#[bg=$thm_black]#{?client_prefix,#[bg=$thm_red],#[bg=$thm_green]}#[fg=$thm_bg] #[fg=$thm_fg,bg=$thm_black] #S "
+set status-right "#[fg=$thm_fg,bg=$thm_black] #W #[fg=$thm_yellow,bg=$thm_bg,nobold,nounderscore,noitalics]#[fg=$thm_bg,bg=$thm_yellow,nobold,nounderscore,noitalics] #{?client_prefix,#[fg=$thm_red],#[fg=$thm_green]}#[bg=$thm_black] #S #{?client_prefix,#[bg=$thm_red],#[bg=$thm_green]}#[fg=$thm_bg] #[fg=$thm_fg,bg=$thm_black]"
 
 # current_dir
 setw window-status-format "#[fg=$thm_bg,bg=$thm_surface0] #I#[fg=$thm_surface0,bg=$thm_black]#[fg=$thm_fg,bg=$thm_black] #{b:pane_current_command} "
